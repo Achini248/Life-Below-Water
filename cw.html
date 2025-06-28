@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="Utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <style>
+            *{
+                margin: 0;
+                padding: 0;
+                color:rgb(144, 170, 196) ;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration:none;
+            }
+     
+            .main{
+                background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+                 url("192273-3840x2160-desktop-4k-coral-reef-wallpaper.jpg");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 110vh;
+                position: relative;
+                 animation: ripple 10s infinite ease-in-out;
+}
+
+               @keyframes ripple {
+                0%, 100% { background-size: 100% 100%; }
+                50% { background-size: 105% 105%; }
+}
+           
+                
+
+            .h {
+                font-family: Georgia, serif;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 48px;
+                margin-top: 90px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+  
+                background: linear-gradient(90deg, #010516, #89a2bb, #58bcee, #040d37);
+                background-size: 300% auto;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                animation: wave-color 5s infinite linear;
+                text-shadow: 2px 4px 6px rgba(5, 3, 58, 0.3);
+}
+
+@keyframes wave-color {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+ 
+
+          
+            .navbar{
+                background-color:rgb(4, 49, 185);
+                height: 50px;
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                text-align:center;
+                display: flex;
+                padding: 20px;
+                justify-content: flex-end;
+                position: fixed;
+                top:0;
+                right: 0;
+                width: 100%;
+                border-top: 1px solid rgba(255, 255, 255, 0.4);
+                border-left:1px solid rgba(16, 6, 69, 0.4) ;
+                z-index: 9999;
+                text-decoration: none;
+                
+                
+            
+
+            }
+            .links{
+               
+                display: flex;
+                gap: 35px;
+                align-items:center;
+                list-style-type: none;
+                transition: 3s;
+                border-radius: 18px;
+                padding: 30px;
+                background-color: rgba(92, 92, 157, 0.2); 
+                backdrop-filter: blur(10px);
+               -webkit-backdrop-filter: blur(4px);
+                border-top: 1px solid rgba(255, 255, 255, 0.4);
+                border-left:1px solid rgba(16, 6, 69, 0.4) ;
+                text-decoration: none;
+        
+
+              
+ 
+           
+            }
+         
+            .a,
+            .b,
+            .c,
+            .d{
+                
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-family:rockwell;
+                font-size:large;
+                transition: color 0.3s ease;
+                text-decoration: none;
+                padding-right: 30px;
+               
+
+           
+          
+            }
+            .a:hover,
+            .b:hover,
+            .c:hover,
+            .d:hover{
+                background-color: rgb(169, 7, 218);
+                color: rgb(13, 89, 89);
+                border-radius: 25px;
+                padding: 6px;
+                text-decoration:none ;  
+                animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+            
+            
+            .i{
+                color: rgb(160, 187, 187);
+                width: 42px;
+                float: left;
+                align-items: start;
+                position:absolute;
+                left:40px;
+                
+
+            }
+            .i:hover{
+                transform: translate(-5px, -5px);
+            }
+            .pa,
+            .pb{
+                font-family: 'Caveat', cursive;
+                font-weight: lighter;
+                color: rgb(37, 0, 101);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: medium;
+            }
+           .container{
+            justify-content: center;
+            align-items: center;
+            
+            
+           }
+           .con{
+            
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap; 
+          margin-top: 50px;
+          }
+                
+            
+           .box {
+    width: 300px;
+    height: 220px;
+    margin: 50px;
+    margin-top: 120px;
+    padding: 10px;
+
+    border-radius: 20px;
+    text-align: center;
+    display: inline-flex;
+
+    background-color: rgba(92, 92, 157, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+
+    border-top: 4px solid rgba(255, 255, 255, 0.4);
+    border-left:3px solid rgba(16, 6, 69, 0.4) ;
+    color: white;
+}
+
+        
+
+                
+            
+            .box3{
+                height: 500px;
+                background-color: rgb(154, 154, 192);
+            }
+            .box:hover{
+                transform: translate(-2px, -2px);
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            }
+            .background-clip {
+  position:absolute;
+  margin-top: 140px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit:cover ;
+
+  filter: blur(2px);
+}
+
+.box2 {
+  position: relative;    
+  z-index: 1;
+
+ 
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.4),
+              0 0 20px rgba(0, 191, 255, 0.2);
+
+}
+
+.text2 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 8px black;
+}
+        .slides{
+            height: 650px;
+            width: 620px;
+            position:relative;
+            overflow: hidden;
+            margin-top: 280px;
+            border-radius: 25px;
+            background-color: rgba(39, 148, 221, 0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+            border-left:1px solid rgba(16, 6, 69, 0.4) ;
+            color: white;
+            padding: 20px;   
+            
+            overflow-x: scroll;
+            box-sizing: border-box;
+            
+        }
+            
+            
+        .text{
+            position:absolute;
+            width:100%;
+            height:100%;
+            opacity:0;
+            padding:20px;
+            animation:fade 20s infinite;
+            
+            
+            
+        }
+        .text:nth-child(1) { animation-delay: 0s; }
+        .text:nth-child(2) { animation-delay: 5s; }
+        .text:nth-child(3) { animation-delay: 10s;}
+        .text:nth-child(4) { animation-delay: 15s;}
+        .slides:hover .text {
+  animation-play-state: paused;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  33% { opacity: 1; }
+  43% { opacity: 0; }
+  100% { opacity: 0; }
+}
+    .headers{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bolder;
+        font-size:50px;
+        font-style: oblique;
+        color:rgb(3, 0, 76);
+        width:100% ;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .text1jpg{
+        display: flex;
+        float: left;
+        width: 400px;
+        size: fixed;
+        margin: 20px;
+    
+    }
+    .text2jpg{
+        width: 370px;
+        border-radius: 15px;
+        float:center;
+        margin: 20px;
+    
+    }
+    .text3jpg{
+        width:450px;
+        float:right;
+        margin:20px;
+
+
+    }
+    .text4jpg{
+        width: 420px;
+        float: left;
+        margin: 25px;
+    }
+    .para{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size:large;
+        color: rgb(20, 8, 83);
+    }
+
+
+
+
+
+
+            
+
+         
+        </style>
+        </head>
+  
+                
+
+
+            
+   
+    <body>
+       
+       <div class="main">
+        <nav class="navbar">
+            <img src="C:\Users\ADMIN\OneDrive\Documents\sea-turtle.png" class="i">
+            <ul class="links">
+                
+                <li class="a"><a href="file:///C:/Users/ADMIN/OneDrive/Documents/cw.html#">Home</a></li>
+                <li class="b"><a href="file:///C:/Users/ADMIN/OneDrive/Documents/cwtable.html#" target="_blank">Table</a></li>
+                <li class="c"><a href="#">Sitemap</a></li>
+                <li class="d"><a href="#">Profile</a></li>
+                <li class="d"><a href="#">Feedback</a></li>
+                
+            </ul>
+        </nav>
+        <h2 class="h">
+            Echoes Beneath the Waves
+        </h2>
+      
+      
+    <div class="con">
+    
+
+       
+       <div class="box">
+        <p class="pa"><strong>💧 Ocean Facts:</strong><br>
+         Over 70% of Earth’s surface is covered by oceans, yet more than 80% of it remains unexplored.</p>
+        <p class="pb">#ExploreTheBlue</p>
+
+       </div>
+       
+       <div class="box">
+        <p class="pa"><strong>🐢 Did You Know?</strong><br>
+        Over 100,000 marine animals die each year due to plastic pollution. Sea turtles often mistake bags for jellyfish.</p>
+        <p class="pb">#SayNoToPlastic</p>
+
+       </div>
+       
+       <div class="box">
+        <p class="pa"><strong>🌊 Your Impact:</strong><br>
+        Switching to reusable bottles and joining beach cleanups can help protect marine life from daily harm.</p>
+        <p class="pb">#ProtectOurOceans</p>
+       </div>
+       <blockquote style="font-style: italic; color:#c6f7ff; margin-top:20px;">
+  "The sea, once it casts its spell, holds one in its net of wonder forever." – Jacques Cousteau
+</blockquote>
+    </div>
+    
+    
+    <div class="box2">
+        
+        <video autoplay loop muted playsinline class="background-clip">
+            <source src="160767-822213540_small.mp4 " type="video/mp4"/>
+        </video>
+        <div class="slides">
+        <div class="text">
+            <h1 class="headers">Protecting Marine<br> Biodiversity</h1>
+            <p class="para">Our oceans are home to millions of species, many of which are still 
+                undiscovered. Protecting marine biodiversity means preserving the delicate balance of life beneath the waves. <img src="pexels-rachel-claire-5531429 (1).jpg" class="text1jpg" alt="deepsea">Overfishing, pollution, and habitat destruction threaten these ecosystems. By supporting sustainable fishing and marine reserves,
+                 we can help safeguard this underwater world for future generations.</p>
+        </div>
+        <div class="text">
+            <h1 class="headers">Combating Plastic Pollution</h1>
+            <p class="para">Plastic waste is one of the biggest threats to ocean health. 
+                Millions of tons of plastic enter the sea every year, harming marine animals who ingest or get tangled in it. <img src="brian-yurasits-y8k-dMPNWNI-unsplash.jpg" alt="plastic" class="text2jpg">
+                Reducing single-use plastics, improving waste management, and participating in beach clean-ups 
+                are crucial steps to keep our waters clean and protect marine life.</p>
+        </div>
+        <div class="text">
+            <h1 class="headers">Coral Reefs: Rainforests<br> of the Sea</h1>
+            <p class="para">Coral reefs support about 25% of all marine species,
+                 making them vital to ocean health. However, climate change, pollution,<img src="192273-3840x2160-desktop-4k-coral-reef-wallpaper.jpg" alt="coral"class="text3jpg"> and acidification are causing coral bleaching and reef 
+                 degradation. Protecting reefs means addressing global warming and reducing coastal pollution to preserve these vibrant ecosystems.
+
+</p>
+        </div>
+        <div class="text">
+            <h1 class="headers">
+               Sustainable Fishing Practices 
+            </h1>
+            <p class="para">Overfishing has led to declining fish populations 
+                worldwide, threatening food security and marine 
+                biodiversity.<img src="photorealistic-wild-tuna-day-celebration (1).jpg"alt="fishing"class="text4jpg"> Sustainable fishing involves setting catch 
+                limits, protecting nursery habitats, and avoiding harmful 
+                gear types. Supporting responsible seafood choices helps maintain the balance of marine ecosystems.
+
+</p>
+
+        </div>
+        </div>
+
+
+    </div>
+    <div class="box3">
+
+    </div>
+    
+    
+
+     </body>
+     </html>  
+        
+        
+
+
+  
